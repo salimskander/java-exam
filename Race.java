@@ -42,10 +42,10 @@ public class Race {
                         vehicle.setOut(vehicle.getOut() - 1);
                     } else if (!resultatList.contains(vehicle)){
                         vehicle.Forward(i, i, i);
-                        System.out.println("the " + vehicle.getPilotName(String) + " has traveled " + vehicle.getDistanceTraveled() + "Km");
+                        System.out.println("the " + vehicle.getPilotName(null) + " has traveled " + vehicle.getDistanceTraveled() + "Km");
                         if (vehicle.getDistanceTraveled() >= distance){
                             resultatList.add(vehicle);
-                            System.out.println("The " + vehicle.getPilotName(String) + "  the race");
+                            System.out.println("The " + vehicle.getPilotName(null) + "  the race");
                         }
                     }
                 }
